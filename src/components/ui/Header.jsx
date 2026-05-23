@@ -38,8 +38,7 @@ const Header = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
-            {/* Logo */}
-            <motion.a
+<motion.a
               href="#home"
               onClick={(e) => handleNavClick(e, '#home')}
               className="text-xl md:text-2xl font-bold gradient-text"
@@ -47,9 +46,7 @@ const Header = () => {
             >
               {personalInfo.name}
             </motion.a>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-1">
+<nav className="hidden lg:flex items-center space-x-1">
               {navItems.slice(1).map((item, index) => (
                 <motion.a
                   key={item.href}
@@ -65,9 +62,7 @@ const Header = () => {
                 </motion.a>
               ))}
             </nav>
-
-            {/* CTA Button */}
-            <motion.a
+<motion.a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
               className="hidden md:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-nebula-blue to-nebula-purple text-white font-medium rounded-lg text-sm transition-all duration-300 hover:shadow-lg hover:shadow-nebula-blue/30"
@@ -77,9 +72,7 @@ const Header = () => {
               <Mail className="w-4 h-4" />
               Entrar em contato
             </motion.a>
-
-            {/* Mobile Menu Button */}
-            <motion.button
+<motion.button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="lg:hidden p-2 text-stellar-silver hover:text-white transition-colors"
               whileTap={{ scale: 0.9 }}
@@ -89,9 +82,7 @@ const Header = () => {
           </div>
         </div>
       </motion.header>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
+<AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -133,9 +124,7 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Backdrop */}
-      <AnimatePresence>
+<AnimatePresence>
         {isMenuOpen && (
           <motion.div
             initial={{ opacity: 0 }}

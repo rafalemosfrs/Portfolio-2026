@@ -48,8 +48,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-nebula-blue/10 via-transparent to-transparent blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-radial from-nebula-purple/10 via-transparent to-transparent blur-3xl" />
       </div>
@@ -61,8 +60,7 @@ const Contact = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Vamos tirar sua ideia da órbita?</span>
           </h2>
@@ -72,8 +70,7 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-          {/* Contact Info */}
-          <motion.div variants={itemVariants}>
+<motion.div variants={itemVariants}>
             <div className="glass-card p-8 h-full">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 rounded-lg bg-gradient-to-br from-nebula-cyan to-nebula-blue">
@@ -83,8 +80,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-6">
-                {/* Location */}
-                <div className="flex items-start gap-4">
+<div className="flex items-start gap-4">
                   <div className="p-2.5 rounded-lg bg-white/5 border border-white/10">
                     <MapPin className="w-5 h-5 text-nebula-cyan" />
                   </div>
@@ -93,9 +89,7 @@ const Contact = () => {
                     <div className="text-white font-medium">{personalInfo.location}</div>
                   </div>
                 </div>
-
-                {/* Email */}
-                <div className="flex items-start gap-4">
+<div className="flex items-start gap-4">
                   <div className="p-2.5 rounded-lg bg-white/5 border border-white/10">
                     <Mail className="w-5 h-5 text-nebula-cyan" />
                   </div>
@@ -109,9 +103,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-
-                {/* LinkedIn */}
-                <div className="flex items-start gap-4">
+<div className="flex items-start gap-4">
                   <div className="p-2.5 rounded-lg bg-white/5 border border-white/10">
                     <Linkedin className="w-5 h-5 text-nebula-cyan" />
                   </div>
@@ -128,9 +120,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-
-                {/* GitHub */}
-                <div className="flex items-start gap-4">
+<div className="flex items-start gap-4">
                   <div className="p-2.5 rounded-lg bg-white/5 border border-white/10">
                     <Github className="w-5 h-5 text-nebula-cyan" />
                   </div>
@@ -148,12 +138,8 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Divider */}
-              <div className="my-8 border-t border-white/10" />
-
-              {/* Social Links */}
-              <div className="flex gap-3">
+<div className="my-8 border-t border-white/10" />
+<div className="flex gap-3">
                 <motion.a
                   href={personalInfo.linkedin}
                   target="_blank"
@@ -179,9 +165,7 @@ const Contact = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* Contact Form */}
-          <motion.div variants={itemVariants}>
+<motion.div variants={itemVariants}>
             <div className="glass-card p-8 h-full">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 rounded-lg bg-gradient-to-br from-nebula-purple to-violet-600">
@@ -191,8 +175,7 @@ const Contact = () => {
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Name Input */}
-                <div>
+<div>
                   <label htmlFor="name" className="block text-sm font-medium text-stellar-silver mb-2">
                     Nome
                   </label>
@@ -207,9 +190,7 @@ const Contact = () => {
                     placeholder="Seu nome"
                   />
                 </div>
-
-                {/* Email Input */}
-                <div>
+<div>
                   <label htmlFor="email" className="block text-sm font-medium text-stellar-silver mb-2">
                     E-mail
                   </label>
@@ -224,9 +205,7 @@ const Contact = () => {
                     placeholder="seu@email.com"
                   />
                 </div>
-
-                {/* Message Input */}
-                <div>
+<div>
                   <label htmlFor="message" className="block text-sm font-medium text-stellar-silver mb-2">
                     Mensagem
                   </label>
@@ -241,9 +220,7 @@ const Contact = () => {
                     placeholder="Sua mensagem..."
                   />
                 </div>
-
-                {/* Submit Button */}
-                <motion.button
+<motion.button
                   type="submit"
                   className="w-full flex items-center justify-center gap-2 px-6 py-3.5 bg-gradient-to-r from-nebula-blue to-nebula-purple text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-nebula-blue/30"
                   whileHover={{ scale: 1.02 }}

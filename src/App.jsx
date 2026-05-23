@@ -12,16 +12,13 @@ import Differentials from './components/sections/Differentials';
 import Contact from './components/sections/Contact';
 import Footer from './components/ui/Footer';
 import WhatsAppButton from './components/ui/WhatsAppButton';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      {/* Cosmic Background */}
-      <CosmicBackground />
-
-      {/* Main Content */}
-      <div className="relative z-10">
+<CosmicBackground />
+<div className="relative z-10">
         <Header />
         <main>
           <Hero />

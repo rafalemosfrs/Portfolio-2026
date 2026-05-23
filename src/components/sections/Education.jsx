@@ -31,8 +31,7 @@ const Education = () => {
 
   return (
     <section id="education" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-gradient-radial from-nebula-blue/10 via-transparent to-transparent blur-3xl" />
         <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-radial from-nebula-purple/10 via-transparent to-transparent blur-3xl" />
       </div>
@@ -44,8 +43,7 @@ const Education = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Formação Acadêmica</span>
           </h2>
@@ -55,8 +53,7 @@ const Education = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {/* Education Cards */}
-          <div>
+<div>
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-lg bg-gradient-to-br from-nebula-cyan to-nebula-blue">
                 <GraduationCap className="w-5 h-5 text-white" />
@@ -95,9 +92,7 @@ const Education = () => {
               ))}
             </div>
           </div>
-
-          {/* Languages */}
-          <div>
+<div>
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 rounded-lg bg-gradient-to-br from-nebula-purple to-violet-600">
                 <Globe className="w-5 h-5 text-white" />
@@ -125,9 +120,7 @@ const Education = () => {
           </div>
         </div>
       </motion.div>
-
-      {/* Certificates Section */}
-      <motion.div
+<motion.div
         ref={ref}
         variants={containerVariants}
         initial="hidden"
@@ -135,8 +128,7 @@ const Education = () => {
         id="certificates"
         className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Certificados</span>
           </h2>
@@ -153,15 +145,12 @@ const Education = () => {
               className="glass-card p-8 hover:scale-105 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:items-start gap-6">
-                {/* Icon */}
-                <div className="flex-shrink-0">
+<div className="flex-shrink-0">
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-nebula-cyan via-nebula-blue to-nebula-purple flex items-center justify-center shadow-xl shadow-nebula-blue/30">
                     <Award className="w-8 h-8 text-white" />
                   </div>
                 </div>
-
-                {/* Content */}
-                <div className="flex-1">
+<div className="flex-1">
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
@@ -181,9 +170,7 @@ const Education = () => {
                       </div>
                     </div>
                   </div>
-
-                  {/* Contents */}
-                  <div className="mb-6">
+<div className="mb-6">
                     <div className="text-sm font-semibold text-white mb-3">Conteúdos estudados:</div>
                     <div className="flex flex-wrap gap-2">
                       {cert.contents.map((content) => (
@@ -196,9 +183,7 @@ const Education = () => {
                       ))}
                     </div>
                   </div>
-
-                  {/* CTA */}
-                  <motion.a
+<motion.a
                     href={cert.certificateUrl}
                     target="_blank"
                     rel="noopener noreferrer"

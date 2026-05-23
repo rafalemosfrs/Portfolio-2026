@@ -8,15 +8,13 @@ const Footer = () => {
 
   return (
     <footer className="relative py-12 overflow-hidden border-t border-white/10">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-gradient-radial from-nebula-blue/5 via-transparent to-transparent" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Brand */}
-          <div>
+<div>
             <motion.a
               href="#home"
               className="text-2xl font-bold gradient-text inline-block mb-4"
@@ -28,9 +26,7 @@ const Footer = () => {
               Desenvolvedor Fullstack criando experiências digitais performáticas, modernas e escaláveis.
             </p>
           </div>
-
-          {/* Quick Links */}
-          <div>
+<div>
             <h4 className="text-white font-semibold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
               {navItems.slice(1, 6).map((item) => (
@@ -45,9 +41,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
-          {/* Contact */}
-          <div>
+<div>
             <h4 className="text-white font-semibold mb-4">Contato</h4>
             <ul className="space-y-2">
               <li>
@@ -83,8 +77,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        {/* Divider */}
 <div className="border-t border-white/10 pt-8">
   <div className="flex flex-col items-center justify-center gap-4">
     <motion.div

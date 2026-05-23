@@ -40,8 +40,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-nebula-blue/10 via-transparent to-transparent blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gradient-radial from-nebula-purple/10 via-transparent to-transparent blur-3xl" />
       </div>
@@ -53,8 +52,7 @@ const Skills = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Skills & Habilidades</span>
           </h2>
@@ -62,17 +60,14 @@ const Skills = () => {
             Minha constelação técnica de habilidades e competências
           </p>
         </motion.div>
-
-        {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
               variants={itemVariants}
               className="glass-card p-6 group hover:scale-105 transition-all duration-300"
             >
-              {/* Category Header */}
-              <div className="flex items-center gap-3 mb-4">
+<div className="flex items-center gap-3 mb-4">
                 <div className={`p-2.5 rounded-lg bg-gradient-to-br ${category.gradient} bg-opacity-10`}>
                   <category.icon className="w-5 h-5 text-white" />
                 </div>
@@ -80,9 +75,7 @@ const Skills = () => {
                   {category.title}
                 </h3>
               </div>
-
-              {/* Skills List */}
-              <div className="space-y-2">
+<div className="space-y-2">
                 <div className="grid grid-cols-2 gap-2">
                   {category.data.map((skill, skillIndex) => (
                     <motion.div
@@ -98,9 +91,7 @@ const Skills = () => {
                   ))}
                 </div>
               </div>
-
-              {/* Constellation Line Effect */}
-              <div className="mt-4 pt-4 border-t border-white/5">
+<div className="mt-4 pt-4 border-t border-white/5">
                 <div className="flex items-center gap-2 text-stellar-gray text-xs">
                   <div className="w-2 h-2 rounded-full bg-nebula-cyan animate-pulse" />
                   <span>{category.data.length} habilidades</span>
@@ -109,9 +100,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Additional Info */}
-        <motion.div
+<motion.div
           variants={itemVariants}
           className="mt-12 text-center"
         >

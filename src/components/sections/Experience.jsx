@@ -31,8 +31,7 @@ const Experience = () => {
 
   return (
     <section id="experience" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-0 w-[400px] h-[400px] bg-gradient-radial from-nebula-blue/10 via-transparent to-transparent blur-3xl" />
         <div className="absolute bottom-1/3 right-0 w-[400px] h-[400px] bg-gradient-radial from-nebula-purple/10 via-transparent to-transparent blur-3xl" />
       </div>
@@ -44,8 +43,7 @@ const Experience = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Experiência</span>
           </h2>
@@ -53,9 +51,7 @@ const Experience = () => {
             Minha trajetória profissional em tecnologia e evolução de carreira
           </p>
         </motion.div>
-
-        {/* Main Experiences */}
-        <div className="mb-16">
+<div className="mb-16">
           {experiences.main.map((exp, index) => (
             <motion.div
               key={exp.company}
@@ -64,19 +60,11 @@ const Experience = () => {
                 index % 2 === 0 ? 'lg:pr-[35%]' : 'lg:pl-[35%] lg:ml-auto'
               }`}
             >
-              {/* Timeline Line */}
-              <div className="absolute left-0 lg:left-1/2 lg:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-nebula-cyan via-nebula-purple to-transparent" />
-
-              {/* Timeline Node */}
-              <div className="absolute left-0 lg:left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-gradient-to-br from-nebula-cyan to-nebula-purple shadow-lg shadow-nebula-cyan/50" />
-
-              {/* Experience Card */}
-              <div className="relative ml-8 lg:ml-0 glass-card p-6 md:p-8 group hover:scale-105 transition-all duration-300">
-                {/* Glowing Border on Hover */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-nebula-cyan/0 via-nebula-cyan/30 to-nebula-purple/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
-
-                {/* Header */}
-                <div className="flex flex-wrap items-start gap-3 mb-4">
+<div className="absolute left-0 lg:left-1/2 lg:-translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-nebula-cyan via-nebula-purple to-transparent" />
+<div className="absolute left-0 lg:left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-gradient-to-br from-nebula-cyan to-nebula-purple shadow-lg shadow-nebula-cyan/50" />
+<div className="relative ml-8 lg:ml-0 glass-card p-6 md:p-8 group hover:scale-105 transition-all duration-300">
+<div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-nebula-cyan/0 via-nebula-cyan/30 to-nebula-purple/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
+<div className="flex flex-wrap items-start gap-3 mb-4">
                   <div className="flex-1">
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-2 group-hover:gradient-text transition-all">
                       {exp.title}
@@ -97,9 +85,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Highlights */}
-                <ul className="space-y-3">
+<ul className="space-y-3">
                   {exp.highlights.map((highlight, hIndex) => (
                     <li key={hIndex} className="flex items-start gap-3 text-stellar-silver">
                       <Star className="w-4 h-4 text-accent-gold mt-1 flex-shrink-0" />
@@ -111,9 +97,7 @@ const Experience = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Previous Experiences */}
-        <motion.div variants={itemVariants} className="mt-20">
+<motion.div variants={itemVariants} className="mt-20">
           <h3 className="text-2xl font-bold text-white text-center mb-8">
             <span className="gradient-text">Experiências Anteriores</span>
           </h3>

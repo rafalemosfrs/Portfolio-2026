@@ -31,8 +31,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/3 w-[600px] h-[600px] bg-gradient-radial from-nebula-blue/5 via-transparent to-transparent" />
         <div className="absolute bottom-0 right-1/3 w-[500px] h-[500px] bg-gradient-radial from-nebula-purple/5 via-transparent to-transparent" />
       </div>
@@ -44,8 +43,7 @@ const Projects = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Projetos</span>
           </h2>
@@ -53,9 +51,7 @@ const Projects = () => {
             Soluções reais que construí para clientes e desafios técnicos
           </p>
         </motion.div>
-
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -63,14 +59,12 @@ const Projects = () => {
               className={`group relative ${project.status === 'coming-soon' ? 'md:col-span-2 lg:col-span-1' : ''}`}
             >
               <div className="h-full glass-card overflow-hidden transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-nebula-blue/20">
-                {/* Card Glow Effect */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <div className="absolute inset-0 bg-gradient-to-br from-nebula-cyan/20 via-transparent to-nebula-purple/20" />
                 </div>
 
                 <div className="relative p-6">
-                  {/* Status Badge */}
-                  {project.status === 'coming-soon' && (
+{project.status === 'coming-soon' && (
                     <div className="absolute top-6 right-6">
                       <div className="flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-nebula-purple/30 to-nebula-blue/30 backdrop-blur-sm border border-nebula-cyan/30 rounded-full">
                         <Sparkles className="w-3.5 h-3.5 text-nebula-cyan animate-pulse" />
@@ -78,9 +72,6 @@ const Projects = () => {
                       </div>
                     </div>
                   )}
-
-                  {/* Project Icon/Preview */}
-{/* Project Image/Preview */}
 <div className="mb-4 h-40 bg-gradient-to-br from-space-night to-space-mid rounded-lg overflow-hidden relative border border-white/10">
   {project.image ? (
     <>
@@ -122,19 +113,13 @@ const Projects = () => {
     </div>
   )}
 </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-all">
+<h3 className="text-xl font-bold text-white mb-3 group-hover:gradient-text transition-all">
                     {project.title}
                   </h3>
-
-                  {/* Description */}
-                  <p className="text-stellar-gray text-sm mb-4 line-clamp-3">
+<p className="text-stellar-gray text-sm mb-4 line-clamp-3">
                     {project.description}
                   </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+<div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
@@ -144,9 +129,7 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
+<div className="flex gap-3">
                     {project.liveUrl && project.status !== 'coming-soon' && (
                       <motion.a
                         href={project.liveUrl}
@@ -185,9 +168,7 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Additional Info */}
-        <motion.div
+<motion.div
           variants={itemVariants}
           className="mt-16 text-center"
         >

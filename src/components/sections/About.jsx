@@ -30,8 +30,7 @@ const About = () => {
 
   return (
     <section id="about" className="relative py-20 md:py-32 overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-radial from-nebula-blue/5 via-transparent to-transparent" />
         <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-radial from-nebula-purple/5 via-transparent to-transparent" />
       </div>
@@ -43,8 +42,7 @@ const About = () => {
         animate={inView ? 'visible' : 'hidden'}
         className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        {/* Section Title */}
-        <motion.div variants={itemVariants} className="text-center mb-16">
+<motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="section-title">
             <span className="gradient-text">Sobre mim</span>
           </h2>
@@ -52,11 +50,8 @@ const About = () => {
             Conheça minha trajetória profissional
           </p>
         </motion.div>
-
-        {/* Content Box */}
-        <div className="grid lg:grid-cols-3 gap-8 items-start">
-          {/* Main Description */}
-          <motion.div
+<div className="grid lg:grid-cols-3 gap-8 items-start">
+<motion.div
             variants={itemVariants}
             className="lg:col-span-2 glass-card p-8"
           >
@@ -67,9 +62,7 @@ const About = () => {
                 </p>
               ))}
             </div>
-
-            {/* Stats */}
-            <div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6">
+<div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold gradient-text">3+</div>
                 <div className="text-sm text-stellar-gray mt-1">Anos de experiência</div>
@@ -88,9 +81,7 @@ const About = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* Highlights */}
-          <motion.div variants={itemVariants} className="space-y-4">
+<motion.div variants={itemVariants} className="space-y-4">
             <h3 className="text-xl font-semibold text-white mb-4">Destaques</h3>
             {aboutContent.highlights.map((highlight, index) => (
               <motion.div

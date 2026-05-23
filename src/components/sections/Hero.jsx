@@ -63,15 +63,12 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center pt-20 pb-10 overflow-hidden"
     >
-      {/* Orbital Lines */}
-      <div className="absolute inset-0 pointer-events-none">
+<div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-nebula-blue/10 rounded-full animate-spin-slow" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border border-nebula-cyan/10 rounded-full animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '25s' }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border border-nebula-purple/10 rounded-full animate-spin-slow" style={{ animationDuration: '30s' }} />
       </div>
-
-      {/* Event Horizon Effect */}
-      <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] pointer-events-none">
+<div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] pointer-events-none">
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/40 rounded-full animate-pulse-slow" />
         <div className="absolute inset-10 bg-gradient-radial from-nebula-purple/20 via-transparent to-transparent rounded-full animate-pulse-slow" style={{ animationDelay: '1s' }} />
         <div className="absolute inset-20 bg-gradient-radial from-[#000]/60 to-[#000]/90 rounded-full" />
@@ -84,8 +81,7 @@ const Hero = () => {
         className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-center lg:text-left">
+<div className="text-center lg:text-left">
             <motion.div
               variants={itemVariants}
               className="inline-block mb-4 px-4 py-2 bg-gradient-to-r from-nebula-blue/20 to-nebula-purple/20 backdrop-blur-sm border border-white/10 rounded-full"
@@ -108,9 +104,7 @@ const Hero = () => {
             >
               {heroContent.subtitle}
             </motion.p>
-
-            {/* Typing Animation */}
-            <motion.div
+<motion.div
               variants={itemVariants}
               className="mb-8 font-mono text-nebula-cyan text-lg"
             >
@@ -118,9 +112,7 @@ const Hero = () => {
               <span>{displayText}</span>
               <span className="animate-pulse">|</span>
             </motion.div>
-
-            {/* CTA Buttons */}
-            <motion.div
+<motion.div
               variants={itemVariants}
               className="flex flex-wrap gap-4 justify-center lg:justify-start"
             >
@@ -154,15 +146,12 @@ const Hero = () => {
 </motion.a>
             </motion.div>
           </div>
-
-          {/* Right Content - Code Card */}
-          <motion.div
+<motion.div
             variants={itemVariants}
             className="relative hidden lg:block"
           >
             <div className="relative">
-              {/* Floating Tech Chips */}
-              {techChips.map((tech, index) => (
+{techChips.map((tech, index) => (
                 <motion.div
                   key={tech}
                   initial={{ opacity: 0, y: 20 }}
@@ -178,9 +167,7 @@ const Hero = () => {
                   {tech}
                 </motion.div>
               ))}
-
-              {/* Main Card */}
-              <div className="glass-card-strong p-6 transform rotate-2 hover:rotate-0 transition-all duration-500">
+<div className="glass-card-strong p-6 transform rotate-2 hover:rotate-0 transition-all duration-500">
                 <div className="flex items-center gap-2 mb-4">
                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
@@ -208,9 +195,7 @@ export default App;`}
           </motion.div>
         </div>
       </motion.div>
-
-      {/* Scroll Indicator */}
-      <motion.div
+<motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
