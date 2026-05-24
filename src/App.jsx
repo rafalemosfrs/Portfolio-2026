@@ -13,27 +13,29 @@ import Contact from './components/sections/Contact';
 import Footer from './components/ui/Footer';
 import WhatsAppButton from './components/ui/WhatsAppButton';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-<CosmicBackground />
+<CosmicBackground/>
 <div className="relative z-10">
-        <Header />
+        <Header/>
         <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Education />
-          <Mission />
-          <Differentials />
-          <Contact />
-          <Analytics />
+          <Hero/>
+          <About/>
+          <Skills/>
+          <Projects/>
+          <Experience/>
+          <Education/>
+          <Mission/>
+          <Differentials/>
+          <Contact/>
+          <Analytics/>
+          <SpeedInsights/>
         </main>
-          <WhatsAppButton />
-        <Footer />
+          <WhatsAppButton/>
+        <Footer/>
       </div>
     </div>
   );
