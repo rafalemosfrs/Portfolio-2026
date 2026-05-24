@@ -12,7 +12,7 @@ import Differentials from './components/sections/Differentials';
 import Contact from './components/sections/Contact';
 import Footer from './components/ui/Footer';
 import WhatsAppButton from './components/ui/WhatsAppButton';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
           <Mission />
           <Differentials />
           <Contact />
+          <Analytics />
         </main>
           <WhatsAppButton />
         <Footer />
